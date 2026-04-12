@@ -1,0 +1,220 @@
+# Dolibarr language file - Source file is en_US - doliagropass
+CHARSET=UTF-8
+
+# ==============================================================================
+# MODULE DESCRIPTOR & MENUS
+# ==============================================================================
+ModuleDoliAgroPassName=DoliAgroPass
+Doliagropass = Audit
+ModuleDoliAgroPassDesc=Passaporto Agroecologico e Audit (CarbOnFarm)
+DoliAgroPassArea=Area DoliAgroPass
+DoliagropassArea = Valutazioni Agroecologiche
+
+# Menus
+Audits=Audit
+NewAudit=Nuovo Audit
+Indicators=Indicatori
+DoliAgroPassAudit=Valutazioni Agroecologiche
+ListDoliAgroPassAudit=Lista valutazioni
+NewDoliAgroPassAudit=Nuova valutazione
+DoliAgroPassIndicators=Indicatori di Sostenibilità
+DoliAgroPassIndicator=Indicatore di Sostenibilità
+NewDoliAgroPassIndicator=Nuovo Indicatore
+ListDoliAgroPassIndicator=Lista degli Indicatori
+
+
+
+# Permissions
+Permission510001=Leggere gli Audit
+Permission510002=Creare/Modificare gli Audit
+Permission510003=Eliminare gli Audit
+Permission510011=Leggere la configurazione Indicatori
+Permission510012=Creare/Modificare Indicatori
+Permission510013=Eliminare Indicatori
+
+# ==============================================================================
+# OBJECTS & FIELDS (Labels)
+# ==============================================================================
+# Audit Fields
+Ref=Rif. Audit
+Label=Etichetta/Descrizione
+Season=Anno/Stagione
+Dateaudit=Data Valutazione
+Auditor=Tecnico Valutatore
+Finalscore=Punteggio IQA Totale
+NotePrivate=Nota Interna (Tecnico)
+NotePublic=Nota Pubblica (Passaporto)
+DateCreation=Data Creazione
+AuditQuestions=Questionario di Valutazione
+Fkuserauditor=Tecnico Valutatore
+
+
+# Indicator Fields
+Code=Codice
+CategoryGroup=Gruppo/Scheda
+InputType=Tipo di Input
+CalculationMethod=Metodo di Calcolo
+Weight=Peso Punteggio
+Unit=Unità di Misura
+
+# Audit Lines (Details)
+ValueMeasured=Valore Rilevato
+Score=Punteggio
+ScoreOverride=Punteggio Corretto
+Source=Fonte Dati
+Note=Note
+
+# Status
+StatusDraft = Bozza
+StatusValidated = Convalidato
+StatusApproved = Approvato
+StatusCanceled = Annullato
+
+# Sources
+SourceMANUAL=Manuale
+SourceDOLIFARM=DoliFarm (Asset)
+SourceDOLITRACE=DoliTrace (Operazioni)
+
+# Errors & Messages
+ErrorCreatingLine=Errore durante la creazione della riga per l'indicatore: %s
+NoLinesFound=Nessuna domanda trovata per questo audit. Verifica che gli indicatori siano attivi.
+RecordSaved=Dati salvati con successo.
+# --- Categorie (Schede) ---
+DAP_CAT_SCHEDA_1 = Scheda 1: Produzione Agricola
+DAP_CAT_SCHEDA_2 = Scheda 2: Allevamenti
+DAP_CAT_SCHEDA_3 = Scheda 3: Apicoltura
+DAP_CAT_SCHEDA_4 = Scheda 4: Qualità del Prodotto
+DAP_CAT_SCHEDA_5 = Scheda 5: Agriturismo & Ristorazione
+DAP_CAT_SCHEDA_6 = Scheda 6: Responsabilità Sociale
+DAP_CAT_SCHEDA_7 = Scheda 7: Suolo & Prova della Vanga
+
+# --- Tabella Audit ---
+InputType = Tipo Input
+CalculationMethod = Metodo Calcolo
+InputTypeNumber = Numero / Quantità
+InputTypeSelect = Selezione da Lista / Scala
+InputTypeBoolean = Sì / No (Booleano)
+CalcMethodAuto = Automatico (Sistema Esterno)
+CalcMethodManual = Inserimento Manuale
+# DoliAgroPass Module Language File - IT_IT
+
+# --- Identificativo Modulo ---
+DoliAgroPass = DoliAgroPass
+DoliAgroPassAudit = Audit Sostenibilità
+DoliAgroPassIndicator = Indicatore Sostenibilità
+
+# --- Categorie (Gruppi Scheda) ---
+DAP_CAT_CROP = Produzione Vegetale
+DAP_CAT_BIODIVERSITY = Biodiversità & Paesaggio
+DAP_CAT_LIVESTOCK = Benessere Animale (Zootecnia)
+DAP_CAT_INPUTS = Gestione Risorse (Acqua/Fertilizzanti)
+DAP_CAT_SOCIAL = Sostenibilità Sociale & Economica
+DAP_CAT_SOIL_VSA = Qualità del Suolo (VSA - Vanga)
+
+# --- Etichette Indicatori (Titoli) ---
+# Scheda 1
+DAP_IND_1_1_ROTATION = Rotazioni Colturali
+DAP_IND_1_2_ECO_AREA = Infrastrutture Ecologiche
+DAP_IND_1_3_WINTER_COVER = Copertura Invernale
+
+# Scheda 2
+DAP_IND_2_1_GRAZING = Accesso al Pascolo
+DAP_IND_2_2_DENSITY = Densità di Allevamento
+
+# Scheda 3
+DAP_IND_3_1_NITROGEN = Origine Azoto
+DAP_IND_3_2_WATER = Efficienza Irrigua
+
+# Scheda 6
+DAP_IND_6_1_LOCAL_SALES = Vendita Diretta / Locale
+DAP_IND_6_2_TRAINING = Formazione Continua
+
+# Scheda 7 (VSA)
+DAP_IND_7_1_TEXTURE = Struttura del Suolo (Vanga)
+DAP_IND_7_2_POROSITY = Porosità
+DAP_IND_7_3_COLOR = Colore e Odore
+DAP_IND_7_4_WORMS = Conteggio Lombrichi
+DAP_IND_7_5_PAN = Suola di Lavorazione
+DAP_IND_7_6_COVER = Copertura Superficiale
+
+# --- Opzioni Generiche (Select) ---
+DAP_OP_BARE_SOIL = Suolo nudo (arato)
+DAP_OP_CROP_RESIDUE = Residui colturali lasciati in campo
+DAP_OP_COVER_CROP = Cover Crop / Sovescio
+
+# --- Opzioni VSA (Visual Soil Assessment) ---
+# Struttura
+DAP_VSA_0_TEXTURE = Zolle grossolane, spigolose, dure (Pessimo - 0)
+DAP_VSA_1_TEXTURE = Zolle medie, parzialmente friabili (Moderato - 1)
+DAP_VSA_2_TEXTURE = Struttura fine, grumosa, friabile (Buono - 2)
+
+# Porosità
+DAP_VSA_0_POROSITY = Suolo compatto, nessun poro visibile (0)
+DAP_VSA_1_POROSITY = Pori presenti ma limitati o piccoli (1)
+DAP_VSA_2_POROSITY = Elevata porosità, buona aerazione (2)
+
+# Colore
+DAP_VSA_0_COLOR = Grigio/Bluastro (Asfissia), odore sgradevole (0)
+DAP_VSA_1_COLOR = Colore misto con screziature ruggine (1)
+DAP_VSA_2_COLOR = Colore scuro/bruno uniforme, odore di bosco (2)
+
+# Lombrichi
+DAP_VSA_0_WORMS = Assenti o rari (< 3) (0)
+DAP_VSA_1_WORMS = Presenti (3 - 10) (1)
+DAP_VSA_2_WORMS = Abbondanti (> 10 di varie dimensioni) (2)
+
+# Suola di lavorazione
+DAP_VSA_0_PAN = Suola compatta e continua entro i 20cm (0)
+DAP_VSA_1_PAN = Suola presente ma fratturata o profonda (1)
+DAP_VSA_2_PAN = Nessuna suola di lavorazione rilevata (2)
+
+# Copertura
+DAP_VSA_0_COVER = Suolo nudo esposto (0)
+DAP_VSA_1_COVER = Copertura parziale (< 50%) (1)
+DAP_VSA_2_COVER = Copertura totale (> 50%) o pacciamatura (2)
+
+# --- Colonne Tabella ---
+InputType = Tipo Input
+CalculationMethod = Metodo Calcolo
+InputTypeNumber = Numero / Quantità
+InputTypeSelect = Selezione da Lista / Scala
+InputTypeBoolean = Sì / No (Booleano)
+CalcMethodAuto = Automatico (Sistema Esterno)
+CalcMethodManual = Inserimento Manuale
+ScoreCalc = Punteggio Calc.
+ScoreOverride = Punteggio Validato
+# --- Scale Graduali Generiche ---
+# Azoto (3.1)
+DAP_SCALE_NITROGEN_1 = 0-20% (Molto Basso)
+DAP_SCALE_NITROGEN_2 = 20-40% (Basso)
+DAP_SCALE_NITROGEN_3 = 40-60% (Medio)
+DAP_SCALE_NITROGEN_4 = 60-80% (Alto)
+DAP_SCALE_NITROGEN_5 = >80% (Eccellente)
+
+# Vendita Locale (6.1)
+DAP_SCALE_SALES_1 = < 10% (Insufficiente)
+DAP_SCALE_SALES_2 = 10-30% (Scarso)
+DAP_SCALE_SALES_3 = 30-50% (Medio)
+DAP_SCALE_SALES_4 = 50-80% (Buono)
+DAP_SCALE_SALES_5 = > 80% (Eccellente)
+# --- Metodi di Calcolo e Input ---
+AUTO_DOLIFARM_BIO = Automatico (DoliFarm Bio)
+AUTO_DOLITRACE_ROTATION = Automatico (DoliTrace Rotazioni)
+MANUAL = Manuale
+MANUAL_VSA_WEIGHTED = Algoritmo VSA (Ponderato)
+SELECT_VSA_0_2 = Selezione VSA (0-1-2)
+SCALE_1_10 = Scala 1-10
+BOOLEAN = Sì / No
+NUMBER = Numero
+
+# --- Messaggi di Errore / Info ---
+DoliAgroPassErrorNoAuditFound = Nessun Audit trovato con questo ID.
+DoliAgroPassRecalculate = Ricalcola Punteggio
+DoliAgroPassScoreUpdated = Il punteggio è stato aggiornato con successo.
+ErrorAddAtLeastOneLineFirst = Aggiungi almeno una riga prima di convalidare.
+NoLinesFound = Nessun indicatore trovato. Verifica la configurazione o crea un nuovo audit.
+RecordSaved = Salvataggio effettuato.
+
+# --- Widgets ---
+HeaderWidgetLastAudit = Ultime Valutazioni
+HeaderWidgetDraftAudits = Valutazioni da convalidare

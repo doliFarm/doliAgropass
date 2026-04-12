@@ -1,0 +1,42 @@
+# Translation file
+
+#
+# Generic
+#
+
+# Module label 'ModuleDoliagropassName'
+ModuleDoliagropassName = Doliagropass
+# Module description 'ModuleDoliagropassDesc'
+ModuleDoliagropassDesc = Doliagropass description
+
+#
+# Admin page
+#
+DoliagropassSetup = Doliagropass setup
+Settings = Settings
+DoliagropassSetupPage = Doliagropass setup page
+NewSection=New section
+DOLIAGROPASS_MYPARAM1 = My param 1
+DOLIAGROPASS_MYPARAM1Tooltip = My param 1 tooltip
+DOLIAGROPASS_MYPARAM2=My param 2
+DOLIAGROPASS_MYPARAM2Tooltip=My param 2 tooltip
+
+
+#
+# About page
+#
+About = About
+DoliagropassAbout = About Doliagropass
+DoliagropassAboutPage = Doliagropass about page
+
+#
+# Sample page
+#
+DoliagropassArea = Home Doliagropass
+MyPageName = My page name
+
+#
+# Sample widget
+#
+MyWidget = My widget
+MyWidgetDescription = My widget description
