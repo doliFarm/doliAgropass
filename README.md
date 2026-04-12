@@ -1,101 +1,40 @@
-<<<<<<< HEAD
-# custo_doliAgropass
-Agroecological indexing and sustainability assessment digital tool, integrated with the doliFarm ecosystem.
-=======
-# DOLIAGROPASS FOR [DOLIBARR ERP & CRM](https://www.dolibarr.org)
+# doliAgroPass
 
-## Features
+An advanced **Agroecological Assessment Tool** designed as a modular extension for the **doliFarm** (Dolibarr) ecosystem. This module enables data-driven evaluation of a farm's ecological performance through a standardized indexing system.
 
-Description of the module...
+## 🌟 Overview
 
-<!--
-![Screenshot doliagropass](img/screenshot_doliagropass.png?raw=true "Doliagropass"){imgmd}
--->
+**doliAgroPass** acts as a digital passport for sustainable agriculture. It quantifies complex environmental metrics into a readable **Agroecological Index**, allowing farmers to monitor biodiversity, soil health, and resource management directly within their ERP/CRM.
 
-Other external modules are available on [Dolistore.com](https://www.dolistore.com).
+### Key Features
+- **AgroScore Calculator**: Core PHP logic for calculating sustainability scores based on field audits.
+- **PWA Integration**: A Progressive Web App (`/pwa`) for mobile-first data collection even in areas with low connectivity.
+- **Dolibarr Native**: Full integration with Dolibarr hooks, triggers, and PDF/ODT generation.
+- **Smart Widgets**: Real-time dashboard indicators for low-score alerts and recent audits.
 
-## Translations
+---
 
-Translations can be completed manually by editing files in the module directories under `langs`.
+## 🏗 Project Structure
 
-<!--
-This module contains also a sample configuration for Transifex, under the hidden directory [.tx](.tx), so it is possible to manage translation using this service.
+The repository follows the standard Dolibarr module architecture:
 
-For more information, see the [translator's documentation](https://wiki.dolibarr.org/index.php/Translator_documentation).
+* `/class`: Business logic and the `AgroScoreCalculator`.
+* `/core`: Module descriptors, PDF/ODT templates, and widgets.
+* `/pwa`: Mobile-friendly interface for field assessments.
+* `/sql`: Database schema and default indicator data.
+* `/langs`: Internationalization support (IT, EN, FR).
+* `/lib`: Helper libraries for score management.
 
-There is a [Transifex project](https://transifex.com/projects/p/dolibarr-module-template) for this module.
--->
+---
 
+## 🚀 Installation & Deployment
 
-## Installation
+### Prerequisites
+- A working instance of **Dolibarr** (v18+ recommended).
+- PHP 8.1+
 
-Prerequisites: You must have Dolibarr ERP & CRM software installed. You can download it from [Dolistore.org](https://www.dolibarr.org).
-You can also get a ready-to-use instance in the cloud from https://saas.dolibarr.org
-
-
-### From the ZIP file and GUI interface
-
-If the module is a ready-to-deploy zip file, so with a name `module_xxx-version.zip` (e.g., when downloading it from a marketplace like [Dolistore](https://www.dolistore.com)),
-go to menu `Home> Setup> Modules> Deploy external module` and upload the zip file.
-
-<!--
-
-Note: If this screen tells you that there is no "custom" directory, check that your setup is correct:
-
-- In your Dolibarr installation directory, edit the `htdocs/conf/conf.php` file and check that following lines are not commented:
-
-    ```php
-    //$dolibarr_main_url_root_alt ...
-    //$dolibarr_main_document_root_alt ...
-    ```
-
-- Uncomment them if necessary (delete the leading `//`) and assign the proper value according to your Dolibarr installation
-
-    For example :
-
-    - UNIX:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = '/var/www/Dolibarr/htdocs/custom';
-        ```
-
-    - Windows:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = 'C:/My Web Sites/Dolibarr/htdocs/custom';
-        ```
--->
-
-<!--
-
-### From a GIT repository
-
-Clone the repository in `$dolibarr_main_document_root_alt/doliagropass`
-
-```shell
-cd ....../custom
-git clone git@github.com:gitlogin/doliagropass.git doliagropass
-```
-
--->
-
-### Final steps
-
-Using your browser:
-
-  - Log into Dolibarr as a super-administrator
-  - Go to "Setup"> "Modules"
-  - You should now be able to find and enable the module
-
-
-
-## Licenses
-
-### Main code
-
-GPLv3 or (at your option) any later version. See file COPYING for more information.
-
-### Documentation
-
-All texts and readme's are licensed under [GFDL](https://www.gnu.org/licenses/fdl-1.3.en.html).
->>>>>>> 4ca27a0 (Initial commit: doliAgroPass module setup)
+### Steps
+1. Clone the repository into your Dolibarr custom directory:
+   ```bash
+   cd /path/to/dolibarr/htdocs/custom
+   git clone [https://github.com/doliFarm/custom_doliAgropass.git](https://github.com/doliFarm/custom_doliAgropass.git) doliagropass
